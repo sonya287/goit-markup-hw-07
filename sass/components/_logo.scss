@@ -1,0 +1,53 @@
+.logo {
+  display: flex;
+  margin: 0;
+  padding-right: 85px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+
+  &__header {
+    @extend .logo;
+    color: #000000;
+
+    margin: 0;
+    padding-right: 85px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    align-items: baseline;
+
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+
+  &__logotip {
+    color: var(--accent-color);
+  }
+
+  &__footer {
+    @extend .logo;
+    color: $primary-background;
+
+    display: inline-block;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--accent-color);
+    text-decoration: none;
+    justify-content: start;
+  }
+}
+
+.footer-address__logo {
+  display: block;
+  margin-bottom: 20px;
+}
