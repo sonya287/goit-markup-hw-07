@@ -1,31 +1,65 @@
-.section-hero {
-  @extend %section;
-  padding-top: 0;
-  padding-bottom: 0;
-  text-align: center;
-}
-
-.overlay {
+.hero {
+  height: 600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1600px;
-  height: 600px;
+
   background-image: linear-gradient(
-      to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../images/hero-img.jpg');
+    url(../images/hero-img.jpg);
+  background-color: #c4c4c4;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: $header-footer-background;
-  border-top: 1px solid #ececec;
+  background-position: center;
 }
-
-.overlay__title {
-  @extend %title-main;
+.hero__container {
+  @extend%content;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
+.hero__title {
+  max-width: 700px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
 
-.hero-button {
-  @extend %button;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero__button {
+  display: block;
+  padding: 10px 32px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: $accent-color;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
