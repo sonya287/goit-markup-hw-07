@@ -1,0 +1,106 @@
+.form-modal > p {
+  margin-top: 0;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #212121;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.form-label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.content-label {
+  padding-bottom: 4px;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+  font-family: Roboto;
+}
+
+.icon-modal {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  fill: #212121;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  cursor: pointer;
+}
+
+.form-label:focus-within .icon-modal {
+  fill: var(--accent-color);
+}
+
+.form-label .form-input,
+.form-label-comment .comment {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  outline: transparent;
+  cursor: pointer;
+}
+
+.form-label .form-input {
+  padding: 11px;
+  padding-right: 12px;
+  padding-left: 42px;
+  color: #212121;
+}
+
+.form-label-comment {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  font-family: Roboto;
+  width: 100%;
+}
+
+.form-label-comment .comment {
+  resize: none;
+  /*width: 448px;*/
+
+  height: 120px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-family: Roboto;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+
+  /*color: #212121;*/
+
+  cursor: pointer;
+}
+
+.form-label:focus-within .form-input {
+  border-color: var(--accent-color);
+}
+
+.form-label-comment:focus-within .comment {
+  border-color: var(--accent-color);
+}
+
+.form-label-comment .comment::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.button-send {
+  text-align: center;
+
+  /*transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
+}

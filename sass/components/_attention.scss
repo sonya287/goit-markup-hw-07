@@ -1,0 +1,77 @@
+.container--attention .details-list {
+  display: flex;
+  /*justify-content: space-between;*/
+}
+
+.attention .details {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.details-list .items {
+  width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+
+.details-list .details-items::before {
+  display: block;
+  content: '';
+  height: 120px;
+
+  background-color: var(--secondary-background);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.details-list .details-items:nth-child(1)::before {
+  background-image: url(../images/icons/antenna\.svg);
+}
+
+.details-list .details-items:nth-child(2)::before {
+  background-image: url(../images/icons/clock.svg);
+}
+
+.details-list .details-items:nth-child(3)::before {
+  background-image: url(../images/icons/diagram.svg);
+}
+
+.details-list .details-items:nth-child(4)::before {
+  background-image: url(../images/icons/astronaut.svg);
+}
+
+.details-list .details-items:nth-child(4) {
+  margin-right: 0;
+}
+
+.details-list .details-title {
+  color: var(--secondary-black-color);
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.details-list p,
+.team-text p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 400;
+
+  font-size: 14px;
+  line-height: 1.71;
+  color: #757575;
+}
+
+.container--attention .details-text {
+  color: var(--secondary-text-color);
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: left;
+}

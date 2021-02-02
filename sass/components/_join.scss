@@ -1,0 +1,52 @@
+.join {
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+}
+
+.join p {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-background);
+}
+
+.join-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.join-list .join-item {
+  width: 44px;
+  height: 44px;
+}
+
+.join-list .join-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 50%;
+  color: var(--border-examples);
+  background-color: var(--border-footer);
+}
+
+.join-link:hover,
+.join-link:focus {
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
+
+.join-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}

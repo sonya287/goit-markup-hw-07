@@ -17,15 +17,31 @@
     width: 696px;
   }
 
-  &--footer {
+  &--attention {
     @extend .container;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+  }
+
+  &--engage {
+    @extend .container;
+  }
+
+  &--team {
+    @extend .container;
+  }
+
+  &--clients {
+    @extend .container;
   }
 
   &--portfolio {
     @extend .container;
     margin-bottom: 0;
+  }
+
+  &--basement {
+    @extend .container;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
   }
 }
