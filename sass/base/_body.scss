@@ -1,8 +1,22 @@
 body {
-  font-family: roboto, sans-serif;
+  color: var(--primary-text-color);
+  background: var(--primary-background);
+  font-family: Roboto, sans-serif;
   font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
-  background-color: #ffffff;
-  color: #757575;
+  margin: 0;
+}
+header {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-inline-start: 0px;
+}
+
+a {
+  text-decoration: none;
 }

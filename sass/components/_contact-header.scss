@@ -1,56 +1,90 @@
-.contacts-header {
-  margin-left: auto;
-
-  &__list {
-    @extend %list;
-  }
-}
-
-.contacts-header__item:not(:nth-child(1)) {
-  margin-left: 50px;
-}
-
-.contacts-header__item {
-  &--mail {
-    width: 161px;
-  }
-
-  &--tel {
-    width: 142px;
-  }
-}
-
-.contacts-header__link {
+.info {
   display: flex;
-  align-items: center;
-  width: 100%;
+  margin-left: auto;
+  list-style: none;
+
+  & .info-item {
+    display: flex;
+    margin-left: auto;
+  }
+
+  & .info-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.info.list {
+  display: flex;
+  padding: 0;
+  margin-left: auto;
+  list-style: none;
+}
+
+.adress-link {
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  text-decoration: none;
-  font-weight: raleway, sans-serif;
+  margin: 0;
+  justify-content: flex-end;
+  margin-left: auto;
+  align-items: center;
+  color: var(--secondary-text-color);
+  fill: #757575;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: $primary-text-color;
-  @include transit(color);
+  text-decoration: none;
+}
+.adress-link:hover,
+.adress-link:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.adress-link-icon {
+  margin-right: 10px;
 
   &:hover,
   &:focus {
-    color: $accent-color;
+    fill: #2196f3;
   }
 }
 
-.contacts-header__icon {
-  margin-right: 10px;
-  fill: currentColor;
+.site-nav .link {
+  color: var(--primary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-  &--envelope {
-    width: 16px;
-    height: 12px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
   }
+}
 
-  &--smartphone {
-    width: 10px;
-    height: 16px;
+.site-nav .link.current {
+  position: relative;
+
+  color: var(--accent-color);
+  text-decoration: none;
+
+  &::after {
+    position: absolute;
+    bottom: 0px;
+    content: '';
+
+    display: block;
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+    background-color: var(--accent-color);
   }
 }

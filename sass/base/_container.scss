@@ -4,28 +4,4 @@
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-
-  &--header {
-    @extend .container;
-    display: flex;
-    align-items: center;
-  }
-
-  &--hero {
-    @extend .container;
-    padding: 200px 0 0;
-    width: 696px;
-  }
-
-  &--footer {
-    @extend .container;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-  }
-
-  &--projects {
-    @extend .container;
-    margin-bottom: 0;
-  }
 }

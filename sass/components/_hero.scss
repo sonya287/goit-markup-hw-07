@@ -1,31 +1,66 @@
-.section-hero {
-  @extend %section;
-  padding-top: 0;
-  padding-bottom: 0;
+.hero {
   text-align: center;
-}
-
-.overlay {
-  margin-left: auto;
-  margin-right: auto;
   max-width: 1600px;
   height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--header-footer-background);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../images/hero.jpg');
-  background-size: cover;
+    url('../images/hero-img.jpg');
   background-repeat: no-repeat;
-  background-color: $heder-footer-bg;
-  border-top: 1px solid #ececec;
+  background-position: center;
+  background-size: cover;
+
+  & .container-hero {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    width: 696px;
+  }
+
+  & .hero-title {
+    margin-top: 0;
+    padding-bottom: 30px;
+
+    color: var(--primary-background);
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 }
 
-.overlay__title {
-  @extend %title-main;
-}
+.hero-button {
+  padding: 10px 32px;
+  display: inline-block;
 
-.button-hero {
-  @extend %button;
+  min-width: 200px;
+  min-height: 50px;
+  color: var(--primary-background);
+  background-color: var(--accent-color);
+
+  font-family: Roboto;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background: #188ce8;
+  }
 }

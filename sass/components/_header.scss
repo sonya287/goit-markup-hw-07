@@ -1,8 +1,24 @@
-.header-portfolio {
+.header {
+  display: flex;
+  align-items: center;
+
+  /* outline: solid 2px #ff0000;*/
+}
+
+.border-header {
   border-bottom: 1px solid #ececec;
 }
 
-.main-nav {
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  /*outline: 2px solid tomato;*/
+}
+
+.container.header {
   display: flex;
   align-items: center;
 }
