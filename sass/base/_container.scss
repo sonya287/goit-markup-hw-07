@@ -8,7 +8,7 @@
   &--header {
     @extend .container;
     display: flex;
-    align-items: baseline;
+    align-items: center;
   }
 
   &--hero {
@@ -17,31 +17,15 @@
     width: 696px;
   }
 
-  &--attention {
-    @extend .container;
-  }
-
-  &--engage {
-    @extend .container;
-  }
-
-  &--team {
-    @extend .container;
-  }
-
-  &--clients {
-    @extend .container;
-  }
-
-  &--portfolio {
-    @extend .container;
-    margin-bottom: 0;
-  }
-
-  &--basement {
+  &--footer {
     @extend .container;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+  }
+
+  &--projects {
+    @extend .container;
+    margin-bottom: 0;
   }
 }

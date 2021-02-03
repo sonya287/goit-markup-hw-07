@@ -1,75 +1,31 @@
-.container--hero {
+.section-hero {
+  @extend %section;
+  padding-top: 0;
+  padding-bottom: 0;
   text-align: center;
-  max-width: 1600px;
-  height: 600px;
+}
+
+.overlay {
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--header-footer-background);
+  max-width: 1600px;
+  height: 600px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../images/hero-img.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
+    url('../images/hero.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $heder-footer-bg;
+  border-top: 1px solid #ececec;
 }
 
-.container-hero {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  width: 696px;
+.overlay__title {
+  @extend %title-main;
 }
 
-.hero-title {
-  margin-top: 0;
-  padding-bottom: 30px;
-
-  color: var(--primary-background);
-  font-family: Roboto;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  text-align: center;
-  align-items: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.hero-button {
-  padding-right: 56px;
-  padding-left: 56px;
-}
-
-/* button */
-
-.hero-button {
-  padding: 10px 32px;
-  display: inline-block;
-
-  min-width: 200px;
-  min-height: 50px;
-  color: var(--primary-background);
-  background-color: var(--accent-color);
-
-  font-family: Roboto;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
-  align-items: center;
-  text-align: center;
-  cursor: pointer;
-  letter-spacing: 0.06em;
-
-  border-radius: 4px;
-  /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);*/
-  /* border: 0;*/
-}
-
-.container--hero .hero-button:hover,
-.hero-button:focus {
-  background: #188ce8;
+.button-hero {
+  @extend %button;
 }
