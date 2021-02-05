@@ -1,23 +1,16 @@
 @import './base/normalize';
 @import './utils/variables';
 
-@import './base/body';
-@import './base/container';
 @import './base/visually-hidden';
 
-@import './components/attention';
-@import './components/checkbox';
-@import './components/clients';
-@import './components/contact-header';
-@import './components/engage';
-@import './components/footer';
-@import './components/header';
-@import './components/hero';
-@import './components/logo-header';
-@import './components/form';
-@import './components/navigation';
-@import './components/join';
-@import './components/modal-window';
-@import './components/portfolio';
-@import './components/team';
-@import './components/subscribe';
+@import './components/main-style';
+@import './components/portfolio-button';
+@import './components/portfolio-card';
+@import './components/section-engage';
+@import './components/section-features';
+@import './components/section-footer';
+@import './components/section-header';
+@import './components/section-hero';
+@import './components/section-logo';
+@import './components/section-modal';
+@import './components/section-team';
