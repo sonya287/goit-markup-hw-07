@@ -1,11 +1,11 @@
 .engage-container {
-  padding: 94px 0px 94px;
+  padding: 0px 0px 94px;
 }
 
 .engage-picture {
   display: flex;
   margin: 0px;
-  justify-content: center;
+  // justify-content: center;
   padding: 0px;
 }
 
@@ -19,8 +19,8 @@
   padding: 0px 0px 50px;
 }
 
-.engage--item {
-  padding: 0px 30px 0px 0px;
+.engage--item:not(:last-child) {
+  margin: 0px 30px 0px 0px;
 }
 
 .description-block {

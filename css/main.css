@@ -461,7 +461,7 @@ ul {
 }
 
 .engage-container {
-  padding: 94px 0px 94px;
+  padding: 0px 0px 94px;
 }
 
 .engage-picture {
@@ -469,9 +469,6 @@ ul {
   display: -ms-flexbox;
   display: flex;
   margin: 0px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 0px;
 }
 
@@ -485,8 +482,8 @@ ul {
   padding: 0px 0px 50px;
 }
 
-.engage--item {
-  padding: 0px 30px 0px 0px;
+.engage--item:not(:last-child) {
+  margin: 0px 30px 0px 0px;
 }
 
 .description-block {
@@ -515,7 +512,8 @@ ul {
 }
 
 .features-container {
-  padding: 94px 0px 0px;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .features-item {
@@ -530,8 +528,8 @@ ul {
           justify-content: center;
 }
 
-.features__list {
-  padding: 0px 30px 0px 0px;
+.features__list:not(:last-child) {
+  margin: 0px 30px 0px 0px;
 }
 
 .features-title {
@@ -791,6 +789,9 @@ header {
 
 .header__list {
   position: relative;
+}
+
+.header__list:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -871,6 +872,17 @@ header {
   display: flex;
   margin: auto;
   padding-left: 220px;
+  color: #757575;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address__link {
@@ -883,7 +895,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*align-items: center;*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1257,9 +1271,10 @@ header {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.team-comntainer {
-  background-color: #e5e5e5;
-  padding: 94px 0px 94px;
+.team-container {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -1285,11 +1300,14 @@ header {
 
 .team__list {
   padding: 0px;
-  margin: 0px 30px 0px 0px;
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team__list:not(:last-child) {
+  margin: 0px 30px 0px 0px;
 }
 
 .team__name {
