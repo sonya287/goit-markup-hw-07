@@ -1,9 +1,13 @@
 .card-block {
   display: flex;
-  //flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 0;
+  margin: -15px;
   padding: 50px 0px 0px 0px;
+}
+
+.card-block a {
+  display: block;
 }
 
 .card__li {
@@ -13,7 +17,7 @@
 }
 
 .card__li--right {
-  /*margin-right: 27px;*/
+  margin-right: 27px;
 }
 
 .card-li--border {

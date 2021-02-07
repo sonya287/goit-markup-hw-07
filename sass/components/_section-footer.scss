@@ -1,12 +1,18 @@
 footer {
   background-color: $header-footer-background;
   padding: 60px 0px 60px 0px;
-  display: flex;
 }
 
 .footer-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+//.footer-subscribe {
+// display: flex;
+//  justify-content: space-between;
+//}
 
 .footer-logo {
   display: inline-flex;
@@ -26,20 +32,17 @@ footer {
   line-height: 1.74;
   font-style: normal;
   color: $primary-background;
-  line-height: 1.19;
-  padding: 20px 0px 0px 0px;
-  margin: 0px;
+  margin: 20px 0 0;
 }
 
-.address__link {
-  display: inline-flex;
+.address__link--footer {
+  display: block;
   padding: 0px;
   margin: 9px 0px 0px 0px;
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.74;
-  color: $border-footer-shadow;
-  line-height: 1.19;
+  color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -49,26 +52,25 @@ footer {
 
 //ПРИСОЕДИНЯЙТЕСЬ
 .footer-title {
-  position: absolute;
-  display: inline-flex;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  margin: 0px 0px 0px 70px;
-  padding: 12px 0px 0px 0px;
+  margin: 0px 0px 20px;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.footer-title--left {
-  margin-left: 90px;
-}
-
 .footer__block {
   display: inline-flex;
   padding: 0px;
-  margin-left: 70px;
+  margin: 0;
+}
+
+.footer__social-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .footer__link {
@@ -78,7 +80,6 @@ footer {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-  margin: 30px 10px 0px 0px;
   fill: #ffffff;
   background: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -89,7 +90,7 @@ footer {
 }
 
 .footer__icon {
-  display: inline-flex;
+  display: block;
   width: 20px;
   height: 20px;
 }
@@ -100,26 +101,24 @@ footer {
   height: 50px;
   padding: 15px 16px;
   border-radius: 4px;
-  margin: 45px 15px 0px 90px;
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: $header-footer-background;
 }
 
 .button__text {
-  position: relative;
   display: inline-flex;
+  align-items: center;
   cursor: pointer;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   font-size: 16px;
   line-height: 30px;
   border-radius: 4px;
   font-weight: bold;
   letter-spacing: 0.06em;
-  margin: 45px 0px 0px 0px;
   padding: 0px 10px 0px 29px;
-  align-items: center;
+
   border-style: none;
   outline: transparent;
   color: $primary-background;
@@ -132,11 +131,7 @@ footer {
 }
 
 .button__icon {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 25%;
-  right: 15%;
+  margin-left: 10px;
   fill: $primary-background;
   transition: drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
