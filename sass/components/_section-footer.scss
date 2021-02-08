@@ -5,14 +5,10 @@ footer {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  //justify-content: space-between;
+  align-items: baseline;
+  align-content: center;
 }
-
-//.footer-subscribe {
-// display: flex;
-//  justify-content: space-between;
-//}
 
 .footer-logo {
   display: inline-flex;
@@ -51,6 +47,14 @@ footer {
 }
 
 //ПРИСОЕДИНЯЙТЕСЬ
+
+.footer-join {
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+  justify-content: space-between;
+}
+
 .footer-title {
   font-size: 14px;
   line-height: 16px;
@@ -58,11 +62,12 @@ footer {
   margin: 0px 0px 20px;
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .footer__block {
   display: inline-flex;
+  justify-content: space-between;
   padding: 0px;
   margin: 0;
 }
@@ -95,6 +100,11 @@ footer {
   height: 20px;
 }
 
+.footer-subscribe {
+  margin-left: 94px;
+  display: flex;
+}
+
 .subscribe {
   outline: none;
   width: 358px;
@@ -109,20 +119,29 @@ footer {
 .button__text {
   display: inline-flex;
   align-items: center;
+  padding-top: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+  margin-left: 12px;
+  margin-right: 0;
+  background-color: #2196f3;
+  color: #ffffff;
+
+  font-family: Roboto;
   cursor: pointer;
   min-width: 200px;
   height: 50px;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.8px;
   border-radius: 4px;
-  font-weight: bold;
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
-  padding: 0px 10px 0px 29px;
 
   border-style: none;
   outline: transparent;
-  color: $primary-background;
-  background-color: #2196f3;
+
   transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {

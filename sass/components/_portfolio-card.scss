@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: -15px;
-  padding: 50px 0px 0px 0px;
+  //padding: 50px 0px 0px 0px;
 }
 
 .card-block a {
@@ -11,19 +11,41 @@
 }
 
 .card__li {
-  margin: 0px 0px 30px 0px;
-  padding: 0px;
-  border: 1px solid $border-header;
+  width: 370px;
+  margin: 15px;
+
+  & a {
+    display: block;
+    text-decoration: none;
+  }
+
+  & a:hover,
+  & a:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    outline: transparent;
+  }
 }
 
-.card__li--right {
-  margin-right: 27px;
-}
+.overlay-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 
-.card-li--border {
-  margin: 0px 0px 30px 0px;
-  padding: 0px;
-  border: 1px solid $border-header;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .overlay-link {
@@ -36,21 +58,17 @@
   }
 }
 
-.overlay-link:hover .overlay__style,
-.overlay-link:focus .overlay__style {
+/*.overlay-link:hover .overlay__text::before,
+.overlay-link:focus .overlay__text::before {
+  opacity: 1;
   transform: translateY(0);
-}
-
-.overlay-block {
-  position: relative;
-  overflow: hidden;
-  padding-top: 65px;
-}
+}*/
 
 .overlay__style {
   position: absolute;
-  top: 0;
-  left: 0;
+  margin-top: 0;
+  margin-left: 0;
+
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
@@ -60,29 +78,45 @@
 }
 
 .overlay__text {
-  font-size: 18px;
-  line-height: 28px;
+  //position: absolute;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 24px;
+  padding-left: 24px;
+
+  font-size: 1.5em;
   letter-spacing: 0.03em;
   margin: 0px;
-  padding-top: 65px;
-  padding-bottom: 25px;
   color: $primary-background;
 }
 
 .shadow-box {
-  width: 370px;
-  color: $primary-text-color;
-  padding: 20px 0px 20px 24px;
+  margin: 0;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+
+  background-color: #fff;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .shadow__card {
-  margin: 0px;
-  padding: 0px;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 36px;
-  letter-spacing: 0.06em;
+  margin-top: 0;
+  margin-bottom: 4px;
   font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.card-block img {
+  display: block;
+  min-width: 100%;
+  height: auto;
 }
 
 .shadow__text {

@@ -118,41 +118,67 @@
   color: rgba(117, 117, 117, 0.5);
 }
 
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.check-field {
+  position: relative;
+  margin-bottom: 30px;
+}
+
 .check-box {
-  display: block;
-  padding-left: 7px;
-}
-
-.check__browser {
-  appearance: none;
-}
-
-.check__browser:checked + .check__text {
-  background-size: contain;
-  background-origin: border-box;
-  border-color: $accent-color;
-  background-color: $accent-color;
-  background-image: url(../images/sprite.svg#icon-check);
-}
-
-/*.check__mailing {
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  margin: 0px 8px 0px 0px;
-  border: solid 2px #212121;
-  border-radius: 2px;
-  align-items: center;
-}
-*/
-.check__text {
-  display: inline-block;
-  margin: 19px 0px 0px 0px;
-  padding: 0px;
+  padding-right: 11px;
+  padding-left: 36px;
+
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.03em;
+  list-style-image: 0.03em;
+  font-style: Roboto san-serif;
   color: #757575;
+}
+
+.check-box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  display: inline-block;
+  margin-right: 6px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+
+  background-color: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked + .check-box::after {
+  width: 16px;
+  height: 15px;
+
+  border-color: $accent-color;
+  border-radius: 2px;
+  background-color: $accent-color;
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.checkbox:focus ~ .check-box::after {
+  border-color: #2196f3;
 }
 
 .check__link {
